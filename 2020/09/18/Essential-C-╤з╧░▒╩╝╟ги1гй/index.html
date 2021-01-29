@@ -16,7 +16,7 @@
 <meta property="og:description" content="第一章 C++编程基础本章主要是对于c语言基础知识在c++环境中的变化和一些新的基础等等。    构造函数语法 常数 全自动数组Vector 指针的提领 随机数生成 文件的读写">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-18T11:47:09.000Z">
-<meta property="article:modified_time" content="2020-09-19T10:46:26.000Z">
+<meta property="article:modified_time" content="2021-01-29T05:37:57.834Z">
 <meta property="article:author" content="纣王">
 <meta property="article:tag" content="Essential">
 <meta property="article:tag" content="C++">
@@ -221,6 +221,9 @@
 <p>如果文件没能正确打开，我们将信息写入cerr，告知用户这个状况，cerr和cout一样，但是与cout不同，<br>cerr的输出结果无缓冲–它会立即显示与用户终端中。<br>ifstream：打开一个用于读的文件，如果成功，该文件的写入位置会被定在起始处<br>要是想同时读写一个文件，我们得传入第二个参数值ios_base::in|ios_base::app;例如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fstream iofile(&quot;filename.txt&quot;,ios_base::in|ios_base::app );</span><br><span class="line"></span><br><span class="line">if(! iofile)</span><br><span class="line">&#x2F;&#x2F;某些原因无法打开文件</span><br><span class="line">else</span><br><span class="line">&#123;</span><br><span class="line">    iofile.seekg(0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>seekg可以将iofile重新定位至文件的起始处，但由于此文件是以追加模式开启，因此任何写入操作<br>将会将数据添加在文件末尾。</p>
+<hr>
+<hr>
+<p>觉得这篇文章写的不错的话可以点击下方链接请小编喝一杯奶茶哦~</p>
 
       
 
